@@ -5,6 +5,7 @@ on:
     inputs:
         appname:
         location:
+        env:
 jobs:
   terraform:
     runs-on: ubuntu-latest
