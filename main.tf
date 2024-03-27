@@ -7,7 +7,7 @@ provider "google" {
 # Resource for Google Cloud Run
 resource "google_cloud_run_service" "hello_world" {
   name     = "hello-world"
-  location = "us-east1 "
+  location = "us-east1"
 
   template {
     spec {
