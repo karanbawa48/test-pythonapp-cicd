@@ -1,18 +1,17 @@
 # Provider configuration (assuming GCP)
 provider "google" {
-  # credentials = file("<path-to-your-service-account-key>")
   project = "probable-bebop-418220"
 }
 
 # Resource for Google Cloud Run
-resource "google_cloud_run_service" "hello_world" {
-  name     = "hello-world"
-  location = "us-east1"
+resource "google_cloud_run_service" "webapp" {
+  name     = var.appname
+  location = var.location
 
   template {
     spec {
       containers {
-        image = "us-east1-docker.pkg.dev/probable-bebop-418220/test-app/web-app"
+        image = "us-east1-docker.pkg.dev/probable-bebop-418220/prod-app/web-app"
       }
     }
   }
