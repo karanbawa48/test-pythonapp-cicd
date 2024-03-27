@@ -1,9 +1,8 @@
 name: Terraform CI
 
 on:
-  push:
-    branches:
-      - main
+  repository_dispatch:
+    types: [trigger-workflow-terrafom]
 
 jobs:
   terraform:
