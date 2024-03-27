@@ -1,9 +1,9 @@
-variable "project_id" {
-  description = "Google Cloud Project ID"
-}
 
-variable "region" {
-  description = "GCP region"
-  default     = "us-central1"
+variable "appname" {
+  description = "app name"
+  default     = "prodapp"
 }
-
+variable "location" {
+  description = "region"
+  default     = "us-east1"
+}
