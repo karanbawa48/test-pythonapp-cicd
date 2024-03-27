@@ -1,7 +1,7 @@
 
 variable "appname" {
   description = "app name"
-  default     = "prodapp"
+  default     = "stage"
 }
 variable "location" {
   description = "region"
