@@ -18,7 +18,7 @@ jobs:
         with:
           terraform_version: 1.0.0
         env:
-          pass: ${{ secrets.pass }}
+          pass: ${{ secrets.GCP_CREDENTIALS }}
 
       - name: Terraform Init
         run: terraform init
