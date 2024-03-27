@@ -12,7 +12,7 @@ resource "google_cloud_run_service" "hello_world" {
   template {
     spec {
       containers {
-        image = "gcr.io/<your-project-id>/hello-world-app:latest"
+        image = "us-east1-docker.pkg.dev/probable-bebop-418220/test-app/web-app"
       }
     }
   }
