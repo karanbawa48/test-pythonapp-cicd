@@ -11,7 +11,7 @@ resource "google_cloud_run_service" "webapp" {
   template {
     spec {
       containers {
-        image = "us-east1-docker.pkg.dev/probable-bebop-418220/prod-app/web-app"
+        image = "us-east1-docker.pkg.dev/probable-bebop-418220/prod-app/webapp"
       }
     }
   }
