@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
     inputs:
         appname:
+        location:
 jobs:
   terraform:
     runs-on: ubuntu-latest
