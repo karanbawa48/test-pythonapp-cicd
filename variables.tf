@@ -4,5 +4,7 @@ variable "appname" {
 }
 variable "location" {
   description = "region"
-
+}
+variable "env" {
+  description = "env"
 }
