@@ -1,8 +1,6 @@
 name: Terraform CI
 
-on:
-  repository_dispatch:
-    types: [trigger-workflow-terrafom]
+on: workflow_dispatch
 
 jobs:
   terraform:
